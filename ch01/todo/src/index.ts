@@ -20,7 +20,9 @@ function displayTodoList() : void {
 
 enum Commands {
     Add = "Add New Task",
+    Complete = "Complete Task",
     Toggle = "Show/Hide Completed",
+    Purge = "Remove Completed Tasks",
     Quit = "Quit"
 }
 
@@ -33,6 +35,23 @@ function promptAdd(): void {
             }
             promptUser() ;
         }) ;
+}
+
+function promptComplete() : void {
+    console.clear();
+    inquirer.prompt({ 
+        type: "checkbox", 
+        name: "complete", 
+        message: "Mark Tasks Complete",
+        choices : collection.getTodoItems(showCompleted)
+            .map(item => ( { hame: item.task, value: item.id, checked: item.complete }))
+    })
+    .then ( answers => {
+        let completedTasks = answers["complete"] as number[] ;
+        collection.getTodoItems(true).forEach(item => 
+            collection.markComplete(item.id, completedTasks.find(id => id === item.id) != undefined));
+        promptUser();
+    });
 }
 
 function promptUser() : void {
@@ -53,6 +72,17 @@ function promptUser() : void {
                 showCompleted = !showCompleted ;
                 promptUser();
                 break;
+            case Commands.Complete:
+                if (collection.getItemCounts().incomplete > 0) {
+                    promptComplete();
+                } else {
+                    promptUser();
+                }
+                break;
+            case Commands.Purge:
+                collection.removeComplete();
+                promptUser();
+                break; 
         }
     })
 }
