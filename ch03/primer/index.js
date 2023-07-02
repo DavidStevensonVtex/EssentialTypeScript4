@@ -6,18 +6,18 @@ console.group(`Boots price: ${bootsPrice}`);
 function sumPrices(...numbers)
 {
     return numbers.reduce(function(total, val) {
-        return total + val
+        return total + (Number.isNaN(Number(val)) ? 0 : Number(val))
     }, 0);
 }
 
 let totalPrice = sumPrices(hatPrice, bootsPrice);
 console.log(`Total Price: ${totalPrice} ${typeof totalPrice}`);
-// Total Price: 100100undefined
+// Total Price: 200 number
 
 totalPrice = sumPrices(100, 200, 300);
 console.log(`Total Price: ${totalPrice} ${typeof totalPrice}`);
 // Total Price: 600 number
 
-totalPrice = sumPrices(100,200) ;
+totalPrice = sumPrices(100,200, undefined, false, "hello") ;
 console.log(`Total Price: ${totalPrice} ${typeof totalPrice}`);
 // Total Price: 300 number
