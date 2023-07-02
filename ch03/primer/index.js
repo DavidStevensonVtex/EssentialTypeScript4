@@ -20,6 +20,7 @@ gloves.price = 20 ;
 let sumPrices = (...numbers) => numbers.reduce((total, val) =>
     total + (Number.isNaN(Number(val)) ? 0 : Number(val)));
 
-let totalPrice = sumPrices(hat.price, boots.price, gloves.price) ;
-console.log(`Total: ${totalPrice} ${typeof totalPrice}`);
-// Total: 220 number
+let propertyCheck = hat.price ?? 0 ;
+let objectAndPropertyCheck = (hat ?? {}).price ?? 0 ;
+console.log(`Checks: ${propertyCheck}, ${objectAndPropertyCheck}`);
+// Checks: 100, 100
