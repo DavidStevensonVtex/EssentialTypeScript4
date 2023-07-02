@@ -10,7 +10,10 @@ let hat = {
 
     get price() {
         return this._price ;
-    }
+    },
+
+    writeDetails : () => 
+        console.log(`${this.name}: ${this.price}, ${this.priceIncTax}`)
 } ;
 
 let boots = {
@@ -22,15 +25,15 @@ let boots = {
     }
 } ;
 
-console.log(`Hat: ${hat.price}, ${hat.priceIncTax}`);
+hat.writeDetails();
 hat.price = 120 ;
-console.log(`Hat: ${hat.price}, ${hat.priceIncTax}`);
+hat.writeDetails();
 
 console.log(`Boots: ${boots.price}, ${boots.priceIncTax}`);
 boots.price = "120" ;
 console.log(`Boots: ${boots.price}, ${boots.priceIncTax}`);
 
-// Hat: 100, 120
-// Hat: 120, 144
+// undefined: undefined, undefined
+// undefined: undefined, undefined
 // Boots: 100, 120
 // Boots: 120, 144
