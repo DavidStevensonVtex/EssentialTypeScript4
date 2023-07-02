@@ -26,10 +26,11 @@ console.log(`City: ${secondCity}`);
 
 // Understanding Nullish Coalescing
 // 0, null and NaN are falsy values.
+// ?? onlycoerces undefined and null values, and not the other falsy values, in this example.
 let taxRate ;       // no tax rate has been defined
-console.log(`Tax rate: ${taxRate || 10}%`);
+console.log(`Tax rate: ${taxRate ?? 10}%`);
 taxRate = 0;        // zero-rated for tax
-console.log(`Tax rate: ${taxRate || 10}%`);
+console.log(`Tax rate: ${taxRate ?? 10}%`);
 // Tax rate: 10%
-// Tax rate: 10%
+// Tax rate: 0%
 
