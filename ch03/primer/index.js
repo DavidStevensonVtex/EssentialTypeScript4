@@ -21,6 +21,6 @@ let sumPrices = (...numbers) => numbers.reduce((total, val) =>
     total + (Number.isNaN(Number(val)) ? 0 : Number(val)));
 
 let propertyCheck = hat.price ?? 0 ;
-let objectAndPropertyCheck = (hat ?? {}).price ?? 0 ;
+let objectAndPropertyCheck = hat?.price ?? 0 ;
 console.log(`Checks: ${propertyCheck}, ${objectAndPropertyCheck}`);
 // Checks: 100, 100
