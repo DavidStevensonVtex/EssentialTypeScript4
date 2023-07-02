@@ -1,19 +1,41 @@
-let myObject = {
-    greeting: "Hi, there",
+let hat = {
+    name: "Hat",
+    _price: 100,
+    priceIncTax: 100 * 1.2,
 
-    getWriter() {
-        return (message) => console.log(`${this.greeting}, ${message}`);
+    set price(newPrice) {
+        this._price = newPrice ;
+        this.priceIncTax = this._price * 1.2 ;
+    },
+
+    get price() {
+        return this._price ;
+    },
+
+    writeDetails() {
+        console.log(`${this.name}: ${this.price}, ${this.priceIncTax}`) ;
     }
-}
+} ;
 
-greeting = "Hello" ;
+let boots = {
+    name: "Boots",
+    price: "100",
 
-let writer = myObject.getWriter();
-writer("It is raining today");
+    get priceIncTax() {
+        return Number(this.price) * 1.2 ;
+    }
+} ;
 
-let standAlone = myObject.getWriter ;
-let standAloneWriter = standAlone() ;
-standAloneWriter("It is sunny today");
+hat.writeDetails = hat.writeDetails.bind(hat);
+hat.writeDetails();
+hat.price = 120 ;
+hat.writeDetails();
 
-// Hi, there, It is raining today
-// Hello, It is sunny today
+console.log(`Boots: ${boots.price}, ${boots.priceIncTax}`);
+boots.price = "120" ;
+console.log(`Boots: ${boots.price}, ${boots.priceIncTax}`);
+
+// Hat: 100, 120
+// Hat: 120, 144
+// Boots: 100, 120
+// Boots: 120, 144
