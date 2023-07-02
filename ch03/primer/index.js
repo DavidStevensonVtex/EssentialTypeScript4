@@ -1,11 +1,16 @@
-let names = [ "Hat", "Boots", "Gloves" ];
+let hat = {
+    name: "Hat",
+    price: 100
+} ;
 
-let [, , three] = names ;
-console.log(`Three: ${three}`);
-// Three: Gloves
+let boots = {
+    name: "Boots",
+    price: 100
+} ;
 
-let prices = [ 100, 120, 50.25 ] ;
-let [, ...highest] = prices.sort((a, b) => a - b);
-highest.forEach(price => console.log(`High price: ${price}`));
-// High price: 100
-// High price: 120
+let sumPrices = (...numbers) => numbers.reduce((total, val) =>
+    total + (Number.isNaN(Number(val)) ? 0 : Number(val)));
+
+let totalPrice = sumPrices(hat.price, boots.price) ;
+console.log(`Total: ${totalPrice} ${typeof totalPrice}`);
+// Total: 200 number
