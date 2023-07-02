@@ -19,9 +19,7 @@ console.log(`Type: ${typeof myVariable}`);
 myVariable = 100 ;
 console.log(`Type: ${typeof myVariable}`);
 
-// Hat price: 100
-// Boots price: 100
-//   Prices are different
-//   Total Price: 200
-//   Type: string
-//   Type: number
+let firstCity ;
+let secondCity = firstCity || "London" ;
+console.log(`City: ${secondCity}`);
+// City: London
