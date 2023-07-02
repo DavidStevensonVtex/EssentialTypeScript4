@@ -3,7 +3,7 @@ console.log(`Hat price: ${hatPrice}`);
 let bootsPrice = "100" ;
 console.group(`Boots price: ${bootsPrice}`);
 
-function sumPrices(first, second, third)
+function sumPrices(first, second, third = 0)
 {
     return first + second + third ;
 }
@@ -18,4 +18,4 @@ console.log(`Total Price: ${totalPrice} ${typeof totalPrice}`);
 
 totalPrice = sumPrices(100,200) ;
 console.log(`Total Price: ${totalPrice} ${typeof totalPrice}`);
-//   Total Price: NaN number
+// Total Price: 300 number
