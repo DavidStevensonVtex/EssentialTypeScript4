@@ -1,19 +1,17 @@
-let hatPrice = 100 ;
-console.log(`Hat price: ${hatPrice}`);
-let bootsPrice = "100" ;
-console.group(`Boots price: ${bootsPrice}`);
+let names = [ "Hat", "Boots", "Gloves" ];
+let prices = [] ;
+
+prices.push(100);
+prices.push("100");
+prices.push(50.25);
+
+console.log(`First Item: ${names[0]}: ${prices[0]}`);
 
 let sumPrices = (...numbers) => numbers.reduce((total, val) =>
         total + (Number.isNaN(Number(val)) ? 0 : Number(val))) ;
 
-let totalPrice = sumPrices(hatPrice, bootsPrice);
-console.log(`Total Price: ${totalPrice} ${typeof totalPrice}`);
-// Total Price: 200 number
+let totalPrice = sumPrices(...prices);
+console.log(`Total: ${totalPrice} ${typeof totalPrice}`);
 
-totalPrice = sumPrices(100, 200, 300);
-console.log(`Total Price: ${totalPrice} ${typeof totalPrice}`);
-// Total Price: 600 number
-
-totalPrice = sumPrices(100,200, undefined, false, "hello") ;
-console.log(`Total Price: ${totalPrice} ${typeof totalPrice}`);
-// Total Price: 300 number
+// First Item: Hat: 100
+// Total: 250.25 number
