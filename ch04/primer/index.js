@@ -15,12 +15,7 @@ function* createProductIterator() {
     yield new Product ( "Umbrella", 23 ) ;
 }
 
-let iterator = createProductIterator() ;
-let result = iterator.next() ;
-while (! result.done ) {
-    console.log(result.value.toString());
-    result = iterator.next() ;
-}
+[...createProductIterator()].forEach(p => console.log(p.toString()));
 
 // toString: Name: Hat, Price: 100
 // toString: Name: Boots, Price: 100
