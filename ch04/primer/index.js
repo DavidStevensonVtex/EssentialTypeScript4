@@ -23,16 +23,13 @@ class TaxedProduct extends Product {
         let chainResult = super.toString();
         return `${chainResult}, Tax: ${this.getPriceIncTax()}` ;
     }
+
+    static process(...products) {
+        products.forEach(p => console.log(p.toString()));
+    }
 }
 
-let hat = new TaxedProduct("Hat", 100);
-let boots = new TaxedProduct("Boots", 100, 1.3);
-
-console.log(hat.toString());
-console.log(boots.toString());
+TaxedProduct.process(new TaxedProduct("Hat", 100, 1.2), new TaxedProduct("Boots", 100));
 
 // toString: Name: Hat, Price: 100, Tax: 120
-// toString: Name: Boots, Price: 100, Tax: 130
-
-// toString: Name: Hat, Price: 100
-// toString: Name: Boots, Price: 100
+// toString: Name: Boots, Price: 100, Tax: 120
