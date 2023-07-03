@@ -9,14 +9,37 @@ class Product {
     }
 }
 
-function* createProductIterator() {
-    yield new Product ( "Hat", 100 ) ;
-    yield new Product ( "Boots", 100 ) ;
-    yield new Product ( "Umbrella", 23 ) ;
+class GiftPack {
+    constructor(name, prod1, prod2, prod3) {
+        this.name = name ;
+        this.prod1 = prod1 ;
+        this.prod2 = prod2 ;
+        this.prod3 = prod3 ;
+    }
+
+    getTotalPrice() {
+        return [ this.prod1, this.prod2, this.prod3]
+            .reduce((total, p) => total + p.price, 0 ) ;
+    }
+
+    *getGenerator() {
+        yield this.prod1 ;
+        yield this.prod2 ;
+        yield this.prod3 ;
+    }
 }
 
-[...createProductIterator()].forEach(p => console.log(p.toString()));
+let winter = new GiftPack(
+    "winter", 
+    new Product("Hat", 100), 
+    new Product("Boots", 100), 
+    new Product("Gloves", 23));
 
-// toString: Name: Hat, Price: 100
-// toString: Name: Boots, Price: 100
-// toString: Name: Umbrella, Price: 23
+console.log(`Total price: ${ winter.getTotalPrice() }`);
+
+[...winter.getGenerator()].forEach(p => console.log(`Product: ${ p }`));
+
+// Total price: 223
+// Product: toString: Name: Hat, Price: 100
+// Product: toString: Name: Boots, Price: 100
+// Product: toString: Name: Gloves, Price: 23
