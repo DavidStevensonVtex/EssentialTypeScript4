@@ -1,0 +1,1 @@
+npx nodemon --require esm index.js 

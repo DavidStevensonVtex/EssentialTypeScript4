@@ -1,45 +1,34 @@
 class Product {
     constructor(name, price) {
+        this.id = Symbol();
         this.name = name ;
         this.price = price ;
     }
-
-    toString() {
-        return `toString: Name: ${this.name}, Price: ${this.price}`;
-    }
 }
 
-class GiftPack {
-    constructor(name, prod1, prod2, prod3) {
-        this.name = name ;
-        this.prod1 = prod1 ;
-        this.prod2 = prod2 ;
-        this.prod3 = prod3 ;
-    }
+let product = new Product("Hat", 100);
 
-    getTotalPrice() {
-        return [ this.prod1, this.prod2, this.prod3]
-            .reduce((total, p) => total + p.price, 0 ) ;
-    }
+let productArray = [] ;
+let productSet = new Set() ;
 
-    *[Symbol.iterator]() {
-        yield this.prod1 ;
-        yield this.prod2 ;
-        yield this.prod3 ;
-    }
+for (let i = 0 ; i < 5 ; i++ ) 
+{
+    productArray.push(product);
+    productSet.add(product);
 }
 
-let winter = new GiftPack(
-    "winter", 
-    new Product("Hat", 100), 
-    new Product("Boots", 100), 
-    new Product("Gloves", 23));
+console.log(`Array length: ${productArray.length}`) ;
+console.log(`Set size: ${productSet.size}`);
+// Array length: 5
+// Set size: 1
 
-console.log(`Total price: ${ winter.getTotalPrice() }`);
+// Not so fast...
+let hat1 = new Product("Hat", 100);
+let hat2 = new Product("Hat", 100);
 
-[...winter].forEach(p => console.log(`Product: ${ p }`));
-
-// Total price: 223
-// Product: toString: Name: Hat, Price: 100
-// Product: toString: Name: Boots, Price: 100
-// Product: toString: Name: Gloves, Price: 23
+productSet = new Set() ;
+productSet.add(product);
+productSet.add(hat1) ;
+productSet.add(hat2);
+console.log(`Set size: ${productSet.size}`);
+// Set size: 3
