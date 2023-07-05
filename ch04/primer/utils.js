@@ -7,7 +7,7 @@ export function printDetails(product) {
     console.log(`Name: ${product.name}, Taxed Price: ${taxedPrice}`);
 }
 
-export function applyDiscount(producxt, discount = 5 )
+export function applyDiscount(product, discount = 5 )
 {
     product.price = product.price - 5 ;
 }
