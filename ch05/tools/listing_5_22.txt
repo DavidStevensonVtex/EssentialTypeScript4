@@ -1,0 +1,17 @@
+Listing 5-22. Changing the Compiler Configuration in the tsconfig.json File in the tools Folder
+
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmitOnError": true,
+        "lib": [ "es5", "dom", "es2015.collection" ]
+    }
+}
+
+index.ts now compiles and produces the following output.
+
+Message: Hello, TypeScript
+Bob lives in London 
+Alice lives in Paris
