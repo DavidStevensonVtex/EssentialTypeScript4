@@ -1,3 +1,5 @@
+Listing 5-13. Comenting Out a Statement in the index.ts File in the src Folder
+
 function printMessage(msg: string) :void {
     console.log(`Message: ${ msg }`);
 }
