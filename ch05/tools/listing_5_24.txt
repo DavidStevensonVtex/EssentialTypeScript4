@@ -1,0 +1,17 @@
+Listing 5-24. Using a Module in the index.ts File in the src Folder
+
+import { sum } from "./calc"
+
+let printMessage = (msg: string) :void => 
+    console.log(`Message: ${ msg }`);
+
+let message = ("Hello, TypeScript") ;
+printMessage(message);
+
+let total = sum(100, 200, 300);
+console.log(`Total: ${total}`);
+
+Output:
+
+Message: Hello, TypeScript
+Total: 600

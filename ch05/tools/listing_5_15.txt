@@ -1,0 +1,3 @@
+Listing 5-15. Starting the Package Command
+
+npx tsc-watch --onsuccess "node dist/index.js"

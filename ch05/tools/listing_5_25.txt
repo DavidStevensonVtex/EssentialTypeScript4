@@ -1,0 +1,19 @@
+Listing 5-25. Changing the Compiler Configuration in the tsconfig.json File in the tools Folder
+
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmitOnError": true,
+        // "lib": [ "es5", "dom", "es2015.collection" ]
+    }
+}
+
+Compiler errors:
+
+D:\drs\TypeScript\EssentialTypeScript4\ch05\tools\dist\index.js:1
+import { sum } from "./calc";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module

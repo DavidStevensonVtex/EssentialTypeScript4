@@ -1,0 +1,10 @@
+Listing 5-11. Changing the Compiler Configuration in the tsconfig.json File in the tools folder.
+
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmitOnError": true
+    }
+}

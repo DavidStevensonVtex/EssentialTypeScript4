@@ -1,0 +1,7 @@
+Listing 5-7. Displaying the List of Files for Compilation
+
+tsc --listFiles
+
+The following uses the local package.
+
+npx tsc --listFiles

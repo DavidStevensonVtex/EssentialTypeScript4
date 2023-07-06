@@ -1,0 +1,3 @@
+Listing 5-12. Starting the Compiler in Watch Mode
+
+tsc --watch

@@ -1,0 +1,19 @@
+Listing 5-26. Selecting a Module Format in the tsconfig.json File in the tools Folder
+
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmitOnError": true,
+        // "lib": [ "es5", "dom", "es2015.collection" ]
+        "module": "CommonJS"
+    }
+}
+
+Now compiles successfully.
+Output:
+
+9:32:20 AM - Found 0 errors. Watching for file changes.
+Message: Hello, TypeScript
+Total: 600
