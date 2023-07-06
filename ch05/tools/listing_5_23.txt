@@ -1,0 +1,5 @@
+Listing 5-23. The Contents of the calc.ts File in the src Folder.
+
+export function sum(...vals: number[]) : number {
+    return vals.reduce( (total, val) => total + val ) ;
+}
