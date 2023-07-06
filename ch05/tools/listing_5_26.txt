@@ -1,3 +1,5 @@
+Listing 5-26. Selecting a Module Format in the tsconfig.json File in the tools Folder
+
 {
     "compilerOptions": {
         "target": "ES2018",
@@ -8,3 +10,10 @@
         "module": "CommonJS"
     }
 }
+
+Now compiles successfully.
+Output:
+
+9:32:20 AM - Found 0 errors. Watching for file changes.
+Message: Hello, TypeScript
+Total: 600
