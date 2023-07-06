@@ -1,4 +1,4 @@
-
+Listing 5-3. The Contents of the tsconfig.json File in the tools folder.
 
 {
     "compilerOptions": {
