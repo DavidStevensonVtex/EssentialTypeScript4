@@ -1,0 +1,32 @@
+Listing 6-18. Making a Test Fail in the calc.ts File in the src Folder
+
+
+export function sum(...vals: number[]) : number {
+    return vals.reduce( (total, val) => total + val ) + 10 ;
+}
+
+npx jest --watchAll
+
+ FAIL  src/calc.test.ts
+  × check result value (6 ms)
+
+  ● check result value
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 60
+    Received: 70
+
+      3 | test("check result value", () => {
+      4 |     let result = sum(10, 20, 30 ) ;
+    > 5 |     expect(result).toBe(60) ;
+        |                    ^
+      6 | }) ;
+
+      at Object.<anonymous> (src/calc.test.ts:5:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        5.633 s
+Ran all test suites.
