@@ -1,0 +1,5 @@
+Listing 6-9. Adding Packages to the Example Project
+
+npm install --save-dev eslint@7.18.0
+npm install --save-dev @typescript-eslint/parser@4.13.0
+npm install --save-dev @typescript-eslint/eslint-plugin@4.13.0
