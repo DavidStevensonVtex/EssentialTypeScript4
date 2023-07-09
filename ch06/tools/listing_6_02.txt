@@ -1,3 +1,5 @@
+Listing 6-2. Enabling Source Maps in the tsconfig.json File in the tools Folder
+
 {
     "compilerOptions": {
         "target": "ES2018",
