@@ -1,0 +1,7 @@
+Listing 6-15. The Contents of the jest.config.js File in the tools Folder
+
+// eslint-disable-next-line no-undef
+module.exports = {
+    "roots": [ "src" ],
+    "transform": { "^.+\\.tsx?$": "ts-jest" }
+}

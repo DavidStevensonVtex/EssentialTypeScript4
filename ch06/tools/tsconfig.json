@@ -3,7 +3,7 @@
         "target": "ES2018",
         "outDir": "./dist",
         "rootDir": "./src",
-        "noEmitOnError": true,
+        // "noEmitOnError": true,
         "module": "CommonJS",
         "sourceMap": true
     }
