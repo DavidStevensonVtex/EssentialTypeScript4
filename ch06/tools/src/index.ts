@@ -1,14 +1,10 @@
 import { sum } from "./calc"
 
-debugger;
-
-let printMessage = (msg: string) :void => 
+const printMessage = (msg: string) :void => 
     console.log(`Message: ${ msg }`);
 
-let message = ("Hello, TypeScript") ;
+const message = ("Hello, TypeScript") ;
 printMessage(message);
 
-debugger;
-
-let total = sum(100, 200, 300);
+const total = sum(100, 200, 300);
 console.log(`Total: ${total}`);
