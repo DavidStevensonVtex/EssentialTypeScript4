@@ -1,0 +1,9 @@
+Listing 6-1. Starting the Compiler
+
+npm start
+
+3:22:28 PM - Starting compilation in watch mode...
+
+3:22:29 PM - Found 0 errors. Watching for file changes.
+Message: Hello, TypeScript
+Total: 600
