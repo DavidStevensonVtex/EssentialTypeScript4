@@ -1,3 +1,5 @@
+Listing 6-13. Disabling a Linter Rule for a Single Statement in the index.ts File in the src Folder.
+
 import { sum } from "./calc"
 
 let printMessage = (msg: string) :void => 
