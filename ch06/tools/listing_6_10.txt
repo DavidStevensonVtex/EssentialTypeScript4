@@ -1,0 +1,18 @@
+Listing 6-10. The Contents of the .eslintrc File in the tools Folder
+
+{
+    "root": true,
+    "ignorePatterns": [ "node_modules", "dist" ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ]
+}

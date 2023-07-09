@@ -1,0 +1,45 @@
+Listing 6-11. Running the TypeScript Linter
+
+npx eslint .
+
+=============
+
+WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree.
+
+You may find that it works just fine, or you may not.
+
+SUPPORTED TYPESCRIPT VERSIONS: >=3.3.1 <4.2.0
+
+YOUR TYPESCRIPT VERSION: 4.2.2
+
+Please only submit bug reports when using the officially supported version.
+
+=============
+
+D:\drs\TypeScript\EssentialTypeScript4\ch06\tools\src\index.ts
+   3:1  error  Unexpected 'debugger' statement                          no-debugger
+   5:5  error  'printMessage' is never reassigned. Use 'const' instead  prefer-const
+   8:5  error  'message' is never reassigned. Use 'const' instead       prefer-const
+  11:1  error  Unexpected 'debugger' statement                          no-debugger
+  13:5  error  'total' is never reassigned. Use 'const' instead         prefer-const
+
+✖ 5 problems (5 errors, 0 warnings)
+  3 errors and 0 warnings potentially fixable with the `--fix` option.
+
+
+  After fixing ES Linter warnings:
+
+  $ npx eslint .
+=============
+
+WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree.
+
+You may find that it works just fine, or you may not.
+
+SUPPORTED TYPESCRIPT VERSIONS: >=3.3.1 <4.2.0
+
+YOUR TYPESCRIPT VERSION: 4.2.2
+
+Please only submit bug reports when using the officially supported version.
+
+=============

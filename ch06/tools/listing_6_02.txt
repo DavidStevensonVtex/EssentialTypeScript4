@@ -1,0 +1,12 @@
+Listing 6-2. Enabling Source Maps in the tsconfig.json File in the tools Folder
+
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmitOnError": true,
+        "module": "CommonJS",
+        "sourceMap": true
+    }
+}

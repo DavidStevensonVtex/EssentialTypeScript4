@@ -1,0 +1,8 @@
+Listing 6-19. Changing a Unit Test in the calc.test.ts File in the src Folder
+
+import { sum } from "./calc" ;
+
+test("check result value", () => {
+    let result = sum(10, 20, 30 ) ;
+    expect(result).toBe(70) ;
+}) ;

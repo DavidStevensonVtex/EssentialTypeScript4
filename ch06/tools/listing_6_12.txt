@@ -1,0 +1,36 @@
+Listing 6-12. Disabling a Linter Rule in the .eslintrc File in the tools Folder
+
+{
+    "root": true,
+    "ignorePatterns": [ "node_modules", "dist" ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "prefer-const": 0
+    }
+}
+
+
+After changing const back to let in index.ts, there are still no warnings.
+
+=============
+
+WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree.
+
+You may find that it works just fine, or you may not.
+
+SUPPORTED TYPESCRIPT VERSIONS: >=3.3.1 <4.2.0
+
+YOUR TYPESCRIPT VERSION: 4.2.2
+
+Please only submit bug reports when using the officially supported version.
