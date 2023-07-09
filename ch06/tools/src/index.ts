@@ -1,5 +1,7 @@
 import { sum } from "./calc"
 
+debugger;
+
 let printMessage = (msg: string) :void => 
     console.log(`Message: ${ msg }`);
 
