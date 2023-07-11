@@ -1,3 +1,7 @@
+Lising 7-35. Removing null Values with a Type Guard in the index.ts File in  the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : number, format: boolean) : string | number | null {
     if (amount === 0) {
         return null ;
