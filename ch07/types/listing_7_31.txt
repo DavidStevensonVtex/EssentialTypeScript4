@@ -1,3 +1,7 @@
+Listing 7-31. Using Nullable Types in the index.ts File in the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : number, format: boolean) : string | number {
     if (amount === 0) {
         return null ;
@@ -26,3 +30,10 @@ console.log(`Number value: ${myNumber.toFixed(2)}`);
 
 // Unexpected type for value: null
 // Number value: 240.00
+
+dist/index.d.ts:
+
+declare function calculateTax(amount: number, format: boolean): string | number;
+declare let taxValue: string | number;
+declare let newResult: unknown;
+declare let myNumber: number;
