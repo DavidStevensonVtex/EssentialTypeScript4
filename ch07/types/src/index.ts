@@ -13,7 +13,4 @@ console.log(`Full amount in tax: ${taxAmount}`);
 console.log(`Half share: ${halfShare}`);
 console.log(`Name: ${personVal}`);
 
-// Price: 100
-// Full amount in tax: $120.00
-// Half share: NaN
-// Name: $NaN
+// src/index.ts(1,23): error TS7006: Parameter 'amount' implicitly has an 'any' type.
