@@ -1,3 +1,7 @@
+Listing 7-17. Changing the Function Result in the index.ts File in the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : any) : any {
     return `$${(amount * 1.2).toFixed(2)}` ;
 }
@@ -13,3 +17,10 @@ console.log(`Half share: ${halfShare}`);
 // Price: 100
 // Full amount in tax: $120.00
 // Half share: NaN
+
+dist/index.d.ts:
+
+declare function calculateTax(amount: any): any;
+declare let price: number;
+declare let taxAmount: any;
+declare let halfShare: number;
