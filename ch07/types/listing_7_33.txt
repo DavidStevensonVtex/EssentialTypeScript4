@@ -1,3 +1,7 @@
+Listing 7-33. Expanding a Type Union in the index.ts File in the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : number, format: boolean) : string | number | null {
     if (amount === 0) {
         return null ;
@@ -34,3 +38,4 @@ console.log(`Number value: ${myNumber.toFixed(2)}`);
 
 // Value is null
 // Number value: 240.00
+
