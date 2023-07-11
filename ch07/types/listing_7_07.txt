@@ -1,0 +1,7 @@
+Listing 7-7. Replacing the Contents of the index.ts File in the src Folder
+
+let myVar ;
+
+myVar = 12 ;
+myVar = "Hello" ;
+myVar = true ;
