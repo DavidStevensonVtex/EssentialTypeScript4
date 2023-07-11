@@ -1,3 +1,7 @@
+Listing 7-36: Using an Unassigned Variable in the index.ts File in the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : number, format: boolean) : string | number | null {
     if (amount === 0) {
         return null ;
@@ -6,7 +10,7 @@ function calculateTax(amount : number, format: boolean) : string | number | null
     return format ? `$${calcAmount.toFixed(2)}` : calcAmount ;
 }
 
-let taxValue!: string | number | null  ;
+let taxValue: string | number | null  ;
 eval("taxValue = calculateTax(100, false)")
 
 if (taxValue !== null )
