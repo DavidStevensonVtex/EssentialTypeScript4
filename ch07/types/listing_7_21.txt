@@ -1,0 +1,17 @@
+Listing 7-21. Using a Type Union in the index.ts File in the src Folder
+
+src/index.ts:
+
+function calculateTax(amount : number, format: boolean) : string | number {
+    const calcAmount = amount * 1.2 ;
+    return format ? `$${calcAmount.toFixed(2)}` : calcAmount ;
+}
+
+let taxAmount = calculateTax(100, false);
+let taxString = calculateTax(100, true);
+
+dist/index.d.ts:
+
+declare function calculateTax(amount: number, format: boolean): string | number;
+declare let taxAmount: string | number;
+declare let taxString: string | number;
