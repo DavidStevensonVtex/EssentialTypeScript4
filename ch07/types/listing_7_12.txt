@@ -1,3 +1,5 @@
+Listing 7-12. Relying on Implicit Types in the index.ts File in the src Folder
+
 function calculateTax(amount : number) {
     return amount * 1.2 ;
 }
