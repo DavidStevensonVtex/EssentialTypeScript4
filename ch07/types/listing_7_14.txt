@@ -1,3 +1,5 @@
+Listing 7-14. Configuring the TypeScript Compiler in the tsconfig.json File in the types Folder
+
 {
     "compilerOptions": {
         "target": "ES2020",
