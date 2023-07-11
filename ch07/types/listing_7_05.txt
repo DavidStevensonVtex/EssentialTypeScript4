@@ -1,0 +1,3 @@
+Listing 7-5. The Contents of the index.ts File in the src Folder
+
+console.log("Hello, TypeScript");
