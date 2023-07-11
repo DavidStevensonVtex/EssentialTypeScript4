@@ -1,3 +1,5 @@
+Listing 7-4. Configuring NPM in the package.json File in the types Folder
+
 {
   "name": "types",
   "version": "1.0.0",
