@@ -1,3 +1,7 @@
+Listing 7-23. Using Type Assertions in the index.ts File in the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : number, format: boolean) : string | number {
     const calcAmount = amount * 1.2 ;
     return format ? `$${calcAmount.toFixed(2)}` : calcAmount ;
@@ -11,3 +15,9 @@ console.log(`String Value: ${taxString.charAt(0)}`);
 
 // Number Value: 120.00
 // String Value: $
+
+dist/index.d.ts:
+
+declare function calculateTax(amount: number, format: boolean): string | number;
+declare let taxNumber: number;
+declare let taxString: string;
