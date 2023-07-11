@@ -1,3 +1,7 @@
+Listing 7-22. Declaring Union Types Explicitly in the index.ts File in the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : number, format: boolean) : string | number {
     const calcAmount = amount * 1.2 ;
     return format ? `$${calcAmount.toFixed(2)}` : calcAmount ;
@@ -13,3 +17,9 @@ console.log(`String Value: ${taxString.charAt(0)}`);
 //   Property 'toFixed' does not exist on type 'string'.
 // src/index.ts(10,40): error TS2339: Property 'charAt' does not exist on type 'string | number'.
 //   Property 'charAt' does not exist on type 'number'.
+
+dist/index.d.ts:
+
+declare function calculateTax(amount: number, format: boolean): string | number;
+declare let taxNumber: string | number;
+declare let taxString: string | number;
