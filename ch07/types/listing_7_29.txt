@@ -1,3 +1,7 @@
+Listing 7-29. Using any and unknown Types in the index.ts File in the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : number, format: boolean) : string | number {
     const calcAmount = amount * 1.2 ;
     return format ? `$${calcAmount.toFixed(2)}` : calcAmount ;
@@ -22,3 +26,10 @@ let myNumber: number = newResult ;
 console.log(`Number vlaue: ${myNumber.toFixed(2)}`);
 
 // src/index.ts(21,5): error TS2322: Type 'unknown' is not assignable to type 'number'.
+
+dist/index.d.ts:
+
+declare function calculateTax(amount: number, format: boolean): string | number;
+declare let taxValue: string | number;
+declare let newResult: unknown;
+declare let myNumber: number;
