@@ -1,3 +1,7 @@
+Listing 7-24. Asserting to an Unexpected Type in the index.ts File in the src Folder.
+
+src/index.ts:
+
 function calculateTax(amount : number, format: boolean) : string | number {
     const calcAmount = amount * 1.2 ;
     return format ? `$${calcAmount.toFixed(2)}` : calcAmount ;
@@ -14,3 +18,10 @@ console.log(`Boolean Value: ${taxBoolean}`);
 // src/index.ts(8,18): error TS2352: Conversion of type 'string | number' to type 'boolean' may be a mistake because neither type sufficiently overlaps with the other. 
 // If this was intentional, convert the expression to 'unknown' first.
 //   Type 'number' is not comparable to type 'boolean'.
+
+dist/index.d.ts:
+
+declare function calculateTax(amount: number, format: boolean): string | number;
+declare let taxNumber: number;
+declare let taxString: string;
+declare let taxBoolean: boolean;
