@@ -1,3 +1,5 @@
+Listing 7-8. Displaying the Variable Type in the index.ts File in the src Folder
+
 let myVar ;
 console.log(`${myVar} = ${typeof myVar}`);
 
@@ -7,8 +9,3 @@ myVar = "Hello" ;
 console.log(`${myVar} = ${typeof myVar}`);
 myVar = true ;
 console.log(`${myVar} = ${typeof myVar}`);
-
-// undefined = undefined
-// 12 = number   
-// Hello = string
-// true = boolean
