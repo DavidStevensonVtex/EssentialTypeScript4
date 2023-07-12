@@ -1,3 +1,5 @@
+Listing 8-9. Defining a Rest Parameter in the index.ts File in the src Folder
+
 function calculateTax(amount, discount = 0, ...extraFees  ) {
     return (amount * 1.2) - discount +
         extraFees.reduce( (total, val) => total + val, 0 ) ;
