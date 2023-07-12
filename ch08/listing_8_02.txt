@@ -1,3 +1,5 @@
+Listing 8-2. Disabling Compiler Options in the tsconfig.json File in the types Folder
+
 {
     "compilerOptions": {
         "target": "ES2020",
