@@ -1,3 +1,5 @@
+listing_8-7. Defining an Optional Parameter in the index.ts File in the src Folder
+
 function calculateTax(amount, discount?) {
     return (amount * 1.2) - (discount || 0) ;
 }
