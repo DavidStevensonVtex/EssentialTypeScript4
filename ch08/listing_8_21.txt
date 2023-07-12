@@ -1,3 +1,5 @@
+Listing 8-21. Using an Assert Function in the index.ts File in the src Folder
+
 function check ( expression : boolean ) {
     if ( ! expression ) {
         throw new Error("Expression is false");
