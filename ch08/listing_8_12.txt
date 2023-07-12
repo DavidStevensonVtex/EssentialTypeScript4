@@ -1,3 +1,5 @@
+Listing 8-12. Passing a Null Value to a Function in the index.ts File in the src Folder
+
 function calculateTax(amount : number, discount : number = 0, ...extraFees : number[]  ) {
     return (amount * 1.2) - discount +
         extraFees.reduce( (total, val) => total + val, 0 ) ;
