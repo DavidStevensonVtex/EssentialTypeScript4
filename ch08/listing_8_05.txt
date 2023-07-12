@@ -1,3 +1,5 @@
+Listing 8-5. Consolidating Functions in the index.ts File in the src Folder
+
 function calculateTax(amount, discount) {
     return (amount * 1.2) - discount ;
 }
