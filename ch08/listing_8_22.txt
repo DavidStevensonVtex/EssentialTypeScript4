@@ -1,3 +1,5 @@
+Listing 8-22. Denoting an Assert Function in the index.ts File in the src Folder
+
 function check ( expression : boolean ) : asserts expression {
     if ( ! expression ) {
         throw new Error("Expression is false");
