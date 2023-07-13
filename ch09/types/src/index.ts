@@ -13,7 +13,5 @@ let names = [ "Hat", "Gloves", "Umbrella", "Sunglasses" ] ;
 prices.forEach((price, index) =>
     writePrice(names[index], calculateTax(price)));
 
-// Price for Hat: $120.00
-// Price for Gloves: $90.00    
-// Price for Umbrella: $50.40  
-// Price for Sunglasses: $24.00
+// src/index.ts(10,13): error TS2345: Argument of type 'string | number' is not assignable to parameter of type 'never'.
+// Type 'string' is not assignable to type 'never'.
