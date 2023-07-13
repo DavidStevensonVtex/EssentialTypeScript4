@@ -1,3 +1,5 @@
+Listing 9-15. Using a Rest Element in the index.ts File in the src Folder
+
 function calculateTax(amount : number ) : number {
     return amount * 1.2 ;
 }
