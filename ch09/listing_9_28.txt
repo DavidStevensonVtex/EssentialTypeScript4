@@ -1,3 +1,5 @@
+Listing 9-28. Defining a Second Literal Value Type in the index.ts File in the src Folder
+
 let restrictedValue: 1 | 2 | 3 = 1 ;
 let secondValue: 1 | 10 | 100 = 1 ;
 
