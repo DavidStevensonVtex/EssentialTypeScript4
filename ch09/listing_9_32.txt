@@ -22,3 +22,8 @@ console.log(str);
 
 // Price: 39.98
 // City: London
+
+From index.d.ts:
+
+declare function getCityString(city: "London" | "Paris" | "Chicago"): `City: ${"London" | "Paris" | "Chicago"}`;
+declare let str: "City: London" | "City: Paris" | "City: Chicago";
