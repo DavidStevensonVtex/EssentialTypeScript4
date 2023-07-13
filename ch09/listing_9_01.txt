@@ -1,3 +1,5 @@
+Listing 9-1. The Contents of the index.ts File in the src Folder
+
 function calculateTax(amount : number ) : number {
     return amount * 1.2 ;
 }
