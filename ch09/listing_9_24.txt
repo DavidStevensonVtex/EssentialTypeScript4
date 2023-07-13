@@ -1,3 +1,5 @@
+Listing 9-24. Defining a Const Enum in the index.ts File in the src Folder
+
 const enum Product { Hat, Gloves, Umbrella } ;
 let productValue = Product.Hat ;
 
