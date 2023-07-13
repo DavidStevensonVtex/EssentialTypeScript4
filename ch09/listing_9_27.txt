@@ -1,3 +1,5 @@
+Listing 9-27. Assigning a Different Value in the index.ts File in the src Folder
+
 let restrictedValue: 1 | 2 | 3 = 100 ;
 console.log(`Value: ${restrictedValue}`);   // Value: 3
 
