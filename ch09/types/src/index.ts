@@ -1,0 +1,15 @@
+function check ( val : any ) : asserts val is number {
+    if ( typeof val != "number" ) {
+        throw new Error("Not a number");
+    }
+}
+
+function calculateTax(amount : number | null ) : number {
+    check(amount) ;
+    return amount * 1.2 ;
+}
+
+let taxAmount : number = calculateTax(100);
+console.log("Tax value", taxAmount);
+
+// Tax value 120
