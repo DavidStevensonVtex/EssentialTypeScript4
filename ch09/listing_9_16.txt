@@ -1,3 +1,5 @@
+Listing 9-16. Using an Enum in the index.ts File in the src Folder
+
 function calculateTax(amount : number ) : number {
     return amount * 1.2 ;
 }
