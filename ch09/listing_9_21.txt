@@ -1,3 +1,7 @@
+Listing 9-21. Using a String Enum in the index.ts File in the src Folder
+
+From src/index.ts:
+
 function calculateTax(amount : number ) : number {
     return amount * 1.2 ;
 }
@@ -25,3 +29,22 @@ console.log(`City: ${City.London}`);
 // Number value: 20 Product: Gloves
 // Number value: 31 Product: Umbrella
 // City: London
+
+From dist/index.d.ts
+
+declare enum City {
+    London = "London",
+    Paris = "Paris",
+    NY = "New York"
+}
+
+From dist/index.js:
+
+var City;
+(function (City) {
+    City["London"] = "London";
+    City["Paris"] = "Paris";
+    City["NY"] = "New York";
+})(City || (City = {}));
+;
+console.log(`City: ${City.London}`);
