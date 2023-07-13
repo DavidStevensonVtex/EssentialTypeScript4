@@ -1,3 +1,7 @@
+Listing 9-7. Mixing Array Types in the index.ts File in the src Folder
+
+src/index.ts:
+
 function calculateTax(amount : number ) : number {
     return amount * 1.2 ;
 }
@@ -18,3 +22,7 @@ prices.forEach((price, index) =>
 
 // src/index.ts(17,43): error TS2345: Argument of type 'string | number' is not assignable to parameter of type 'number'.
 // Type 'string' is not assignable to type 'number'.
+
+dist/index.d.ts: (problem)
+
+declare let prices: (string | number)[];
