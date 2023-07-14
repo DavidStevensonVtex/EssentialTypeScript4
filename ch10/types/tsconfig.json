@@ -5,6 +5,10 @@
         "rootDir": "./src",
         "declaration": true,
         "strictNullChecks": true,
-        "suppressExcessPropertyErrors": true
+        // Option 'suppressExcessPropertyErrors' is deprecated and will stop functioning in TypeScript 5.5. 
+        // Specify compilerOption '"ignoreDeprecations": "5.0"' to silence this error.
+        "ignoreDeprecations": "5.0",
+        "suppressExcessPropertyErrors": true,
+
     }
 }
