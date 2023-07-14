@@ -1,0 +1,3 @@
+Listing 10-3. Starting the TypeScript Compiler
+
+npm start
