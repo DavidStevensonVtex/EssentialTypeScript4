@@ -1,3 +1,5 @@
+Listing 10-11. Using an Alias for a Shape Type in the index.ts File in the src Folder
+
 enum Feature { Waterproof, Insulated } ;
 
 type Product = {
