@@ -1,3 +1,5 @@
+Listing 10-10. Checking for an Optional Method in the index.ts File in the src Folder
+
 enum Feature { Waterproof, Insulated } ;
 
 let hat = { name: "Hat", price: 100 } ;
