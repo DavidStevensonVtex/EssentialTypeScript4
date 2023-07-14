@@ -1,9 +1,9 @@
 let hat = { name: "Hat", price: 100 } ;
 let gloves = { name: "Gloves", price: 75 } ;
+let umbrella = { name: "Umbrella" } ;
 
-let products = [ hat, gloves ] ;
+let products = [ hat, gloves, umbrella ] ;
 
 products.forEach(prod => console.log(`${prod.name}: ${prod.price}`));
 
-// Hat: 100
-// Gloves: 75
+// Property 'price' does not exist on type '{ name: string; }'.
