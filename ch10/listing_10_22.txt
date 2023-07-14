@@ -1,0 +1,25 @@
+Listing 10-22. Adding Properties with Different Types in the index.ts File in the src Folder
+
+type Person = {
+    id:   string,
+    name: string,
+    city: string,
+    contact: number
+} ;
+
+type Employee = {
+    id: string,
+    company: string,
+    dept: string,
+    contact: string
+} ;
+
+type EmployedPerson = Person & Employee ;
+
+let typeTest = ({} as EmployedPerson).contact ;
+
+Book says the index.d.ts file says the following type for the contact property in the intersection.
+
+Actual index.d.ts now:
+
+declare let typeTest: never;
