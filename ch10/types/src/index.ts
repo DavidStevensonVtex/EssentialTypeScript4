@@ -18,5 +18,8 @@ let products: Product [] = [ hat, gloves, umbrella, mirrorShades, darkShades ] ;
 
 products.forEach(prod => console.log(`${prod.name}: ${prod.price} Waterproof: ${prod.hasFeature ? prod.hasFeature(Feature.Waterproof) : "false"}`));
 
-// src/index.ts(15,61): error TS2322: Type '{ name: string; price: number; finish: string; }' is not assignable to type 'Product'.
-//   Object literal may only specify known properties, and 'finish' does not exist in type 'Product'.
+// Hat: 100 Waterproof: false
+// Gloves: 75 Waterproof: false    
+// Umbrella: 30 Waterproof: true   
+// Sunglasses: 54 Waterproof: false
+// Sunglasses: 54 Waterproof: false
