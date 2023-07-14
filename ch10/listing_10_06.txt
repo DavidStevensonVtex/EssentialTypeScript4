@@ -1,0 +1,23 @@
+Listing 10-6. Adding Properties in the index.ts File in the src Folder
+
+src/index.ts:
+
+let hat = { name: "Hat", price: 100 } ;
+let gloves = { name: "Gloves", price: 75 } ;
+let umbrella = { name: "Umbrella", price: 30, waterproof: true } ;
+
+let products: { name: string, price?: number } [] = [ hat, gloves, umbrella ] ;
+
+products.forEach(prod => console.log(`${prod.name}: ${prod.price}`));
+
+// Hat: 100
+// Gloves: 75  
+// Umbrella: 30
+
+
+From dist/index.d.ts:
+
+declare let hat:      { name: string; price: number; };
+declare let gloves:   { name: string; price: number; };
+declare let umbrella: { name: string; price: number; waterproof: boolean; };
+declare let products: { name: string; price?: number; }[];

@@ -1,9 +1,11 @@
 let hat = { name: "Hat", price: 100 } ;
 let gloves = { name: "Gloves", price: 75 } ;
-let umbrella = { name: "Umbrella" } ;
+let umbrella = { name: "Umbrella", price: 30, waterproof: true } ;
 
-let products: { name: string, price: number } [] = [ hat, gloves, umbrella ] ;
+let products: { name: string, price?: number } [] = [ hat, gloves, umbrella ] ;
 
 products.forEach(prod => console.log(`${prod.name}: ${prod.price}`));
 
-// src/index.ts(5,67): error TS2741: Property 'price' is missing in type '{ name: string; }' but required in type '{ name: string; price: number; }'.
+// Hat: 100
+// Gloves: 75  
+// Umbrella: 30
