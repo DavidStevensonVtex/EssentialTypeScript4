@@ -1,3 +1,5 @@
+Listing 10-14. Using a Type Union in the index.ts File in the src Folder
+
 type Product = {
     id:     number,
     name:   string,
