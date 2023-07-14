@@ -1,3 +1,5 @@
+Listing 10-5. Using Object Shape Type Annotations in the index.ts File in the src Folder
+
 let hat = { name: "Hat", price: 100 } ;
 let gloves = { name: "Gloves", price: 75 } ;
 let umbrella = { name: "Umbrella" } ;
