@@ -1,3 +1,5 @@
+Listing 10-8. Including a Method in a Shape Type in the index.ts File in the src Folder
+
 enum Feature { Waterproof, Insulated } ;
 
 let hat = { name: "Hat", price: 100 } ;
