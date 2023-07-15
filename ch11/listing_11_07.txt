@@ -1,3 +1,5 @@
+Listing 11-7. Applying Access Control Keywords in the index.ts File in the src Folder
+
 type Person = {
     id:   string,
     name: string,
