@@ -21,7 +21,7 @@ class Employee {
     }
 
     writeDept() {
-        console.log(`${this.name} works in ${this.//#region dept}`);       
+        console.log(`${this.name} works in ${this.#dept}`);       
     }
 }
 
