@@ -1,3 +1,5 @@
+Listing 11-24. Defining an Index Signature in the index.ts File in the src Folder
+
 interface Product {
     name: string ;
     price: number ;
