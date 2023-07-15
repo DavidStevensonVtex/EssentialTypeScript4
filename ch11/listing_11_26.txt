@@ -1,3 +1,20 @@
+Listing 11-26. Configuring the Compiler in the tsconfig.json File in the types Folder
+
+tsconfig.json:
+
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declaration": true,
+        "strictNullChecks": true,
+        "noUncheckedIndexedAccess": true
+    }
+}
+
+src/index.ts:
+
 interface Product {
     name: string ;
     price: number ;
