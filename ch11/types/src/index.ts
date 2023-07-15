@@ -11,5 +11,5 @@ let data: Person[] = [
 ] ;
 
 data.forEach(item => {
-    console.log(`{item.id} ${item.name}, ${item.city}`);
+    console.log(`${item.id} ${item.name}, ${item.city}`);
 });
