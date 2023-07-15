@@ -1,3 +1,5 @@
+Listing 11-16. Defining an Abstract Class in the index.ts File in the src Folder
+
 abstract class Person {
     constructor(public id: string, public name: string, public city: string ) {}
 
