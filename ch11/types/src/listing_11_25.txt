@@ -1,3 +1,5 @@
+Listing 11-25. Accessing a Non-existent Property in the index.ts File in the src Folder
+
 interface Product {
     name: string ;
     price: number ;
