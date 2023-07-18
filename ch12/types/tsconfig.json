@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declaration": true,
+        "strictNullChecks": true,
+        "noUncheckedIndexedAccess": true
+    }
+}
