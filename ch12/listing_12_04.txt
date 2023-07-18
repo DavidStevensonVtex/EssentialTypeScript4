@@ -1,0 +1,9 @@
+Listing 12-4. Starting the TypeScript Compiler
+
+npm start
+
+
+Item: Bob Smith
+Item: Dora Peters  
+Item: Running Shoes
+Item: Hat
