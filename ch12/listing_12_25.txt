@@ -1,3 +1,5 @@
+Listing 12-25. Defining an Abstract Class in the index.ts File in the src Folder
+
 import { City, Person, Product, Employee } from "./dataTypes" ;
 
 type shapeType = { name: string } ;
