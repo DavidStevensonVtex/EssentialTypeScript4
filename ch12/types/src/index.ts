@@ -33,7 +33,7 @@ class DataCollection<T> {
     }
 }
 
-let peopleData = new DataCollection(people) ;
+let peopleData = new DataCollection<Person>(people) ;
 
 // console.log(`Names: ${peopleData.getNames().join(", ")}`);
 let firstPerson = peopleData.getItem(0) ;
