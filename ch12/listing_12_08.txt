@@ -1,3 +1,5 @@
+Listing 12-8. Using a Different Type Argument in the index.ts File in the src Folder
+
 import { Person, Product } from "./dataTypes" ;
 
 let people = [ 
