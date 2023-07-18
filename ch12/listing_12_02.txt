@@ -1,3 +1,5 @@
+Listing 12-2. Replacing the Contents of the index.ts File in the src Folder
+
 import { Person, Product } from "./dataTypes" ;
 
 let people = [ 
