@@ -1,3 +1,9 @@
+Listing 12-18. Using a Type Predicate Function in the index.ts File in the src Folder
+
+In situations where you need to identify objects by type, generic types are not helpful, and a Predicate
+function must be used. Listing 12-18 adds a parameter to the filter method that accepts a type Predicate
+function, which is then used to find objects of a specific type.
+
 import { City, Person, Product, Employee } from "./dataTypes" ;
 
 let people = [ 
