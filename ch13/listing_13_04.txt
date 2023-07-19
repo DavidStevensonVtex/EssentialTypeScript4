@@ -1,3 +1,5 @@
+Listing 13-4. Using a Map in the index.ts File in the src Folder
+
 import { City, Person, Product, Employee } from "./dataTypes" ;
 
 let products = [ new Product("Running Shoes", 100), new Product("Hat", 25) ] ;
