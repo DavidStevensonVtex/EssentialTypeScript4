@@ -1,3 +1,5 @@
+Listing 13-13. Using an Index Type in a Collection Class in the index.ts File n the src Folder
+
 import { City, Person, Product, Employee } from "./dataTypes" ;
 
 let products = [ new Product("Running Shoes", 100), new Product("Hat", 25) ] ;
