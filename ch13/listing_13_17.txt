@@ -1,3 +1,5 @@
+Listing 13-17. Using a Generic Type Parameter in the index.ts File in the src Folder
+
 import { City, Person, Product, Employee } from "./dataTypes" ;
 
 type Mapped<T> = {
