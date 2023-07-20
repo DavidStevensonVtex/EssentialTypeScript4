@@ -1,3 +1,5 @@
+Listing 13-32. Using a Built-in Conditional Types in the index.ts File in the src Folder
+
 import { City, Person, Product, Employee } from "./dataTypes" ;
 
 function makeObject<T extends new ( ...args: any) => any>
