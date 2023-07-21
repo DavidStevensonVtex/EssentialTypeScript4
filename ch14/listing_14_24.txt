@@ -1,0 +1,13 @@
+Listing 14-24. The Contents of the index.d.ts File in the types/debug Folder
+
+declare interface Debug {
+    (namespace: string) : Debugger
+}
+
+declare interface Debugger {
+    (...args: string[] ) : void ;
+    enabled : boolean ;
+}
+
+declare var debug : { default: Debug } ;
+export = debug ;
