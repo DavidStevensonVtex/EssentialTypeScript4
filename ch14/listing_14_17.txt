@@ -1,3 +1,5 @@
+Listing 14-17. Describing the Type Union in the formatters.js File in the src Folder
+
 //@ts-nocheck
 
 export function sizeFormatter(thing, count) {
@@ -23,3 +25,7 @@ export function costFormatter(thing, cost) {
 function writeMessage(message) {
     console.log(message) ;
 }
+
+
+The Cart has 4 items
+The Cart costs $341.3
