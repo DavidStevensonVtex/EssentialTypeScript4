@@ -1,0 +1,4 @@
+Listing 14.1. Creating the package.json
+
+cd usingjs
+npm init --yes
