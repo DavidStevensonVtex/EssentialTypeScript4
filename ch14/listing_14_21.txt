@@ -1,0 +1,8 @@
+Listing 14-21. Adding a Statement in the formatters.d.ts File in the src Folder
+
+export function sizeFormatter(thing: string, count: number ): void;
+export function costFormatter(thing: string, cost: number | string): void;
+export function writeMessage(message : string) : void ;
+
+The Cart has 4 items
+The Cart costs $341.3
