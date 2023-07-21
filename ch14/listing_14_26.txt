@@ -1,0 +1,46 @@
+Listing 16-26. Running the Compiler
+
+tsc --traceResolution
+
+======== Resolving module './product' from 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/cart.ts'. ========
+Module resolution kind is not specified, using 'NodeJs'.
+Loading module as file / folder, candidate module location 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/product', target file type 'TypeScript'.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/product.ts' exist - use it as a name resolution result.
+======== Module name './product' was successfully resolved to 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/product.ts'. ========
+======== Resolving module './product' from 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/index.ts'. ========
+Resolution for module './product' was found in cache from location 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src'.
+======== Module name './product' was successfully resolved to 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/product.ts'. ========
+======== Resolving module './cart' from 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/index.ts'. ========
+Module resolution kind is not specified, using 'NodeJs'.
+Loading module as file / folder, candidate module location 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/cart', target file type 'TypeScript'.      
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/cart.ts' exist - use it as a name resolution result.
+======== Module name './cart' was successfully resolved to 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/cart.ts'. ========
+======== Resolving module './formatters' from 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/index.ts'. ========
+Module resolution kind is not specified, using 'NodeJs'.
+Loading module as file / folder, candidate module location 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/formatters', target file type 'TypeScript'.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/formatters.ts' does not exist.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/formatters.tsx' does not exist.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/formatters.d.ts' exist - use it as a name resolution result.
+======== Module name './formatters' was successfully resolved to 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/formatters.d.ts'. ========
+======== Resolving module 'debug' from 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/src/index.ts'. ========
+Module resolution kind is not specified, using 'NodeJs'.
+'baseUrl' option is set to 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs', using this value to resolve non-relative module name 'debug'.
+'paths' option is specified, looking for a pattern to match module name 'debug'.
+Module name 'debug', matched pattern '*'.
+Trying substitution 'types/*', candidate module location: 'types/debug'.
+Loading module as file / folder, candidate module location 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug', target file type 'TypeScript'.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug.ts' does not exist.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug.tsx' does not exist.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug.d.ts' does not exist.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug/package.json' does not exist.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug/index.ts' does not exist.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug/index.tsx' does not exist.
+File 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug/index.d.ts' exist - use it as a name resolution result.
+======== Module name 'debug' was successfully resolved to 'D:/drs/TypeScript/EssentialTypeScript4/ch14/usingjs/types/debug/index.d.ts'. ========
+../../src/index.ts:18:31 - error TS2554: Expected 1 arguments, but got 2.
+
+18 let db = debug("Example App", true) ;
+                                 ~~~~
+
+
+Found 1 error.
