@@ -1,3 +1,5 @@
+isting 14-32. Adding Statements in the index.ts File in the src Folder
+
 import { SportsProduct, SPORT } from "./product" ;
 import { Cart } from "./cart" ;
 import { sizeFormatter, costFormatter, writeMessage } from "./formatters" ;
