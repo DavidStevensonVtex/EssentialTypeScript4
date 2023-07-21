@@ -1,0 +1,4 @@
+Listing 14-34. Running the Compiler 
+
+tsc --traceResolution
+
