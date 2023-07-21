@@ -1,0 +1,4 @@
+Listing 14-22. Adding a Package to the Example Project
+
+npm install debug@4.3.1
+
