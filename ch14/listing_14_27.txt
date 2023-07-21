@@ -1,0 +1,4 @@
+Listing 14-27. Installing a Type Declaration package
+
+npm install --save-dev @types/debug 
+
