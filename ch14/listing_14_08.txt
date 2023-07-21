@@ -1,0 +1,7 @@
+Listing 14-8. Starting the Compiler
+
+npm start
+
+
+Cart has 4 items
+Cart value is $341.30
