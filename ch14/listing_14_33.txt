@@ -1,0 +1,18 @@
+Listing 14-33. Configuring the Compiler in the tsconfig.json File in the usingjs Folder
+
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "commonjs",
+        "declaration": true,
+        "allowJs": true,
+        "checkJs": true,
+        // "baseUrl": ".",
+        // "paths": {
+        //     "*": [ "types/*" ]
+        // }
+        "esModuleInterop": true
+    }
+}
