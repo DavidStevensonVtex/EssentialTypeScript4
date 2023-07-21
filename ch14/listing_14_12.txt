@@ -1,3 +1,5 @@
+Listing 14-12. Configuring the Compiler in the tsconfig.json File in the usingjs Folder
+
 {
     "compilerOptions": {
         "target": "es2020",
@@ -8,3 +10,7 @@
         "checkJs": true
     }
 }
+
+
+The Cart has 4 items
+The Cart costs $341.30
