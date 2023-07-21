@@ -4,6 +4,7 @@
         "outDir": "./dist",
         "rootDir": "./src",
         "module": "commonjs",
+        "declaration": true,
         "allowJs": true,
         "checkJs": true
     }
