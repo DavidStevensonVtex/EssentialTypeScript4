@@ -1,0 +1,10 @@
+Listing 14-3. The Contents of the tsconfig.json File in the usingjs Folder
+
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "commonjs"
+    }
+}
