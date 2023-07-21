@@ -1,0 +1,7 @@
+Listing 14-18. The Contents of the formatters.d.ts File in the src Folder
+
+export function sizeFormatter(thing: string, count: number ): void;
+export function costFormatter(thing: string, cost: number | string): void;
+
+The Cart has 4 items
+The Cart costs $341.3
