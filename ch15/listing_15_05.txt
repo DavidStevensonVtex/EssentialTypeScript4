@@ -1,0 +1,4 @@
+Listing 15-5. Compiling and Executing the result
+
+tsc
+node dist/index.js
