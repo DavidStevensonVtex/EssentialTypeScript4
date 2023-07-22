@@ -1,0 +1,43 @@
+Listing 15-13. Starting the Development Web Server 
+
+npx webpack serve 
+
+
+$ npx webpack serve 
+[webpack-cli] Unable to load '@webpack-cli/serve' command
+[webpack-cli] TypeError: options.forEach is not a function
+
+https://github.com/webpack/webpack-cli/issues/2990
+
+https://github.com/dfinity/sdk/issues/1870
+
+Here is the issue in the source project:
+webpack/webpack-cli#2990
+
+I can confirm bumping it to 4.9.0 appears to work
+(modify version in package.json)
+
+npm install
+
+---
+
+$ npx webpack serve 
+i ｢wds｣: Project is running at http://localhost:4500/
+i ｢wds｣: webpack output is served from /
+i ｢wds｣: Content not from webpack is served from ./assets
+i ｢wdm｣: asset bundle.js 964 KiB [emitted] (name: main)
+runtime modules 432 bytes 3 modules
+modules by path ./node_modules/ 361 KiB
+  modules by path ./node_modules/webpack-dev-server/client/ 20.9 KiB 10 modules
+  modules by path ./node_modules/html-entities/lib/*.js 61 KiB 5 modules
+  modules by path ./node_modules/qs/lib/*.js 26.6 KiB 5 modules
+  modules by path ./node_modules/webpack/hot/ 2.1 KiB 3 modules
+  modules by path ./node_modules/url/ 37.2 KiB 2 modules
+  modules by path ./node_modules/call-bind/*.js 1.68 KiB 2 modules
+  modules by path ./node_modules/has-symbols/*.js 2.13 KiB 2 modules
+  modules by path ./node_modules/function-bind/*.js 1.55 KiB 2 modules
+  + 11 modules
+./src/index.ts 25 bytes [built] [code generated]
+./util.inspect (ignored) 15 bytes [built] [code generated]
+webpack 5.88.2 compiled successfully in 3275 ms
+i ｢wdm｣: Compiled successfully.
