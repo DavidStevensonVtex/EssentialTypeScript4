@@ -1,0 +1,4 @@
+Listing 15-10. Adding the Webpack Dev Server (WDS) (HTTP Server)
+
+npm install --save-dev webpack-dev-server@3.11.2
+
