@@ -1,6 +1,6 @@
 import { createElement } from "./tools/jsxFactory" ;
 import { Product } from "./data/entities" ;
-import { ProductItem } from "./ProductItem" ;
+import { ProductItem } from "./productItem" ;
 import { CategoryList } from "./categoryList" ;
 
 export class ProductList {

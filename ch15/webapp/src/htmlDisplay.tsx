@@ -18,10 +18,6 @@ export class HtmlDisplay {
     async getContent(): Promise<HTMLElement> {
         await this.updateContent() ;
         return this.containerElem ;
-
-        // return  <h3 className="bg-secondary text-center text-white p-2">
-        //             { this.getElementText() }
-        //         </h3>
     }
 
     async updateContent()

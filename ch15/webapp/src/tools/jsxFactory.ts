@@ -1,6 +1,8 @@
 export function createElement ( tag: any, props: Object, ...children : Object[] ) : HTMLElement {
     function addChild(elem: HTMLElement, child: any ) {
-        elem.appendChild ( child instanceof Node ? child : document.createTextNode(child.toString())) ;
+        if ( child ) {
+            elem.appendChild ( child instanceof Node ? child : document.createTextNode(child.toString())) ;
+        }
     }
 
     if ( typeof tag === "function" ) {

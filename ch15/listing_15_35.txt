@@ -1,3 +1,5 @@
+Listing 15-35. Changing Props in the index.ts File in the src Folder
+
 import { LocalDataSource } from "./data/localDataSource" ;
 import { HtmlDisplay } from "./htmlDisplay" ;
 import "bootstrap/dist/css/bootstrap.css" ;
@@ -18,7 +20,6 @@ document.onreadystatechange = () => {
         displayData().then( elem => {
             let rootElement = document.getElementById("app") ;
             rootElement.innerHTML = "" ;
-            console.log(elem);
             rootElement.appendChild(elem) ;
         });
     }
