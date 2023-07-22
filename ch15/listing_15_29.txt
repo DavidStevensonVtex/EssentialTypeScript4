@@ -1,3 +1,7 @@
+Listing 15-29. Adding an import Statement in the htmlDisplay.tsx File in the src Folder
+
+This now compiles correctly using tsc, after 5 listings of compile errors using tsc.
+
 import { createElement } from "./tools/jsxFactory" ;
 import { Product, Order } from "./data/entities" ;
 
