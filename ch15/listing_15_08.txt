@@ -1,0 +1,12 @@
+Listing 5-8. Creating the Bundle File
+
+https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+
+The Correct (safe) Solution (for npm users)
+Use an up-to-date version of Node.js, and also use packages that are up-to-date with security fixes.
+
+For many people, the following command will fix the issue:
+
+npm audit fix --force
+
+npx webpack 
