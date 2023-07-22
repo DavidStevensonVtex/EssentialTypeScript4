@@ -33,6 +33,10 @@ export class Order {
                 this.lines.get ( prod.id )!.quantity += quantity
             }
         }
+        else
+        {
+            this.lines.set(prod.id, new OrderLine(prod, quantity));
+        }
     }
 
     public removeProduct ( id: number ) {
@@ -49,6 +53,7 @@ export class Order {
     }
 
     get total() : number {
-        return [ ...this.lines.values() ].reduce( (total, ol) => total + ol.total, 0) ;
+        return [ ...this.lines.values() ]
+            .reduce( (total, ol) => total += ol.total, 0) ;
     }
 }

@@ -14,3 +14,5 @@ async function displayData() : Promise<string> {
     result += `Order total: $${ds.order.total.toFixed(2)}` ;
     return result ;
 }
+
+displayData().then ( res => console.log(res)) ;
