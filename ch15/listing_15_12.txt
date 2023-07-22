@@ -1,0 +1,13 @@
+Listing 15-12. The Contents of the index.html File in the assets Folder
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Web App</title>
+        <script src="bundle.js"></script>
+    </head>
+    <body>
+        <div id=""app">Web App Placeholder</div>
+    </body>
+</html>
