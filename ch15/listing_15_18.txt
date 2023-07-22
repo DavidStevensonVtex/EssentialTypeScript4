@@ -1,3 +1,5 @@
+Listing 15-18. Replacing the Contents of the index.ts File in the src Folder
+
 import { LocalDataSource } from "./data/localDataSource" ;
 
 async function displayData() : Promise<string> {
