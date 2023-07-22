@@ -1,0 +1,6 @@
+Listing 15-6. Adding Packages to the Example Project
+
+npm install --save-dev webpack@5.17.0
+npm install --save-dev webpack-cli@4.5.0
+npm install --save-dev ts-loader@8.0.14
+
