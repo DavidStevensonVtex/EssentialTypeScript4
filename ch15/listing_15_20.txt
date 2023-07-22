@@ -1,0 +1,5 @@
+Listing 15-20. Adding Packages to the Project
+
+npm install bootstrap@4.6.0
+npm install --save-dev css-loader@5.0.1
+npm install --save-dev style-loader@2.0.0
