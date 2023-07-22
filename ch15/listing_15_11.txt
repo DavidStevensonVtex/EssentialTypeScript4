@@ -1,3 +1,5 @@
+Listing 15-11. Changing the Configuration in the webpack.config.js File in the webapp Folder
+
 module.exports = {
     mode: "development",
     devtool: "inline-source-map",
