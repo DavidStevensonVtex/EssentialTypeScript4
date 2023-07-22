@@ -1,0 +1,9 @@
+Listing 15-3. The Contents of the tsconfig.json File in the webapp folder
+
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "outDir": "./dist",
+        "rootDir": "./src"
+    }
+}
