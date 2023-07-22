@@ -9,8 +9,7 @@ export class CategoryList
     }
 
     getContent() : HTMLElement {
-        return
-            <div>
+        return <div>
                 { [ "All", ...this.props.categories].map(c => this.getCategoryButton(c)) }
             </div>
     }

@@ -13,7 +13,7 @@ export class ProductItem {
         return <div className="card m-1 p-1 bg-light">
             <h4>
                 { this.props.product.name }
-                <span className="badge badge-pill badge-primary flaot-fright">
+                <span className="badge badge-pill badge-primary float-right">
                     ${ this.props.product.price.toFixed(2) }
                 </span>
             </h4>
