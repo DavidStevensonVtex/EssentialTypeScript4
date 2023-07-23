@@ -1,0 +1,16 @@
+Listing 16-14. Configuring the TypeScript Compiler in the tsconfig.json File in the webapp Folder 
+
+Added: "emitDecoratorMetadata": true
+
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "jsx": "react",
+        "jsxFactory": "createElement",
+        "moduleResolution": "Node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}
