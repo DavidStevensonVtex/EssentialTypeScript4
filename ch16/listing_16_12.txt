@@ -1,0 +1,42 @@
+Listing 16-12. Applying a Decorator in the abstractDataSource.ts File in the src/data Folder 
+
+Experimental support for decorators is a feature that is subject to change in a future release. 
+Set the 'experimentalDecorators' option in your tsconfig or jsconfig to remove this warning.
+
+https://stackoverflow.com/questions/38271273/experimental-decorators-warning-in-typescript-compilation
+
+I've to add the following in the settings.json file of vscode to remove the warning.
+
+"javascript.implicitProjectConfig.experimentalDecorators": true
+
+STEP 1: Press ctrl + , in VS code
+
+STEP 2: Enter 'js/ts.implicitProjectConfig: Experimental Decorators' in search box
+
+STEP 3: check the checkbox related to the search
+
+https://stackoverflow.com/questions/61341444/error-set-the-experimentaldecorators-option-in-your-tsconfig-or-jsconfig
+
+tsconfig.json changes:
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "jsx": "react",
+        "jsxFactory": "createElement",
+        "moduleResolution": "Node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}
+
+Stopped and re-started:
+
+npm start
+
+Successful compilation and verification in web pages of minimum prices of $30.
