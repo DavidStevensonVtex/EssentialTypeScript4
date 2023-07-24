@@ -1,0 +1,10 @@
+Listing 17-8. Starting the Development Tools
+
+npm start
+
+Error: error:0308010C:digital envelope routines::unsupported
+
+npm audit fix --force
+
+npm WARN audit Updating @angular/cli to 16.1.5, which is a SemVer major change.
+npm WARN audit Updating json-server to 0.17.3, which is a SemVer major change.

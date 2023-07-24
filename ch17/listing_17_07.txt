@@ -1,0 +1,8 @@
+Listing 17-7. Adding a Stylesheet in the angular.json File in the angularapp Folder
+
+node_modules/bootstrap/dist/css/bootstrap.min.css
+
+            "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
