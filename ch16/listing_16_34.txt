@@ -1,0 +1,6 @@
+Listing 16-34. Listing the Containers
+
+docker ps 
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                    NAMES      
+1d58c8b32c34   webapp    "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:4000->4000/tcp   vigorous_wu
