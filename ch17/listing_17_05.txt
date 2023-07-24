@@ -1,0 +1,12 @@
+Listing 17-5. Configuring Tools in the package.json File in the angularapp Folder
+
+  "scripts": {
+    "ng": "ng",
+    "json": "json-server data.js -p 4600",
+    "serve": "ng serve",
+    "start": "npm-run-all -p serve json",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
