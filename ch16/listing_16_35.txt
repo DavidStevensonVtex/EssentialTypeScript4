@@ -1,0 +1,3 @@
+Listing 16-35. Stopping the Container
+
+docker stop 1d58c8b32c34
