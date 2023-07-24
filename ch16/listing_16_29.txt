@@ -1,0 +1,12 @@
+Listing 16-29. The Contents of the deploy-package.json File in the webapp Folder 
+
+{
+    "name": "webapp",
+    "description": "Stand-Alone Web App",
+    "repository": "https://github.com/Apress/essential-typescript",
+    "license": "OBSD",
+    "devDependencies": {
+        "express": "4.17.1",
+        "json-server": "0.16.3"
+    }
+}
